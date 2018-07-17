@@ -1,0 +1,626 @@
+@import "http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,900";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900);
+
+.all {
+	margin: 0;
+	padding: 0;
+	transition: padding 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-webkit-transition: padding 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-moz-transition: padding 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+}
+.header {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	-o-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding-bottom: 5em;
+	padding-left: 1.95em;
+	padding-top: 3em;
+}
+h1 {
+	color: #081F0B;
+	font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT';
+	font-size: 3em;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-webkit-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-moz-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+}
+
+h1 a, li a {
+	color: black;
+	text-decoration: none;
+}
+
+h1 span {
+	color: rgba(0, 45, 0, .95) !important;
+}
+
+.nav {
+	float: right;
+	position: relative;
+	top: 1em;
+	transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-webkit-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+	-moz-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
+}
+.nav li {
+	float: left;
+	font-family: 'Raleway', 'Gill Sans MT';
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-right: 2em;
+}
+.content ul {
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin-left: 9%;
+	margin-top: 5%;
+}
+.content ul li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	float: left;
+	margin-bottom: 2em;
+	margin-right: 2.5em;
+	max-width: 90%;
+}
+.content ul li img {
+	border: 1px solid #FFFFFF;
+	box-shadow: 0 0 2px #D3D3D3;
+    -webkit-box-shadow: 0 0 2px #D3D3D3;
+    -moz-box-shadow: 0 0 2px #D3D3D3;
+    -o-box-shadow: 0 0 2px #D3D3D3;
+	max-width: 100%;
+}
+
+@media screen and (min-width: 588px) {
+	.content ul li {
+		max-width: 39.5%;
+	}
+	h1 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1077px) {
+	.all {
+		padding: 1em 0 0;
+	}
+	.content ul {
+		background: none repeat scroll 0 0 #FFFFFF;
+		margin-left: 3.5em;
+		margin-top: 3.5em;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+	.nav {
+		top: -2.8em;
+	}
+	.nav li {
+		font-size: 1.8em;
+	}
+
+}
+
+@media screen and (min-width: 1216px) {
+	.content ul li {
+		max-width: 28.5%;
+	}
+
+}
+
+@media screen and (min-width: 2467px) {
+
+	.content ul li:last-child {
+
+		float: none;
+	}
+
+}
+
+/*
+
+ Resume
+
+ */
+
+.resume {
+	font-family: 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+.skills, .edu {
+	margin-left: 2.1em;
+	margin-right: 2.1em;
+	margin-top: 1.5em;
+}
+.skills dd {
+	font-size: 0.8em;
+	line-height: 1.4em;
+	margin-right: 1em;
+}
+.skills dt, .job1 dt:nth-child(3), .job2 dt:nth-child(3) {
+	font-size: 1.6em;
+	font-weight: 700;
+	margin-top: 0.15em;
+}
+.skills dt {
+	margin-bottom: 0.3em;
+}
+.skills {
+	margin-bottom: 2.3em;
+}
+.job1 {
+	clear: both;
+}
+.resume h2 {
+	font-size: 3.5em;
+	font-weight: 200;
+	margin-left: 0.6em;
+	margin-top: 1em;
+	padding-top: 1em;
+	text-transform: lowercase;
+}
+.contact {
+	font-weight: 700;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+	margin-left: 2.2em;
+	margin-top: 1em;
+}
+.job1, .job2, .refs {
+	margin: 3.95em 2.1em 2em;
+}
+
+.job1 dt:nth-child(1), .job1 dt:nth-child(2), .job2 dt:nth-child(1), .job2 dt:nth-child(2) {
+	font-size: 0.95em;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+.job1 dd, .job2 dd {
+	font-size: 0.8em;
+	line-height: 1.3em;
+	padding-bottom: 0.7em;
+}
+.job1 dt:nth-child(3), .job2 dt:nth-child(3) {
+	margin-bottom: 0.8em;
+}
+.edu dt dfn {
+	display: block;
+	font-size: 1.6em;
+	font-weight: 200;
+	margin-bottom: 0.6em;
+}
+.edu {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	margin-bottom: 2em;
+	margin-top: 0;
+}
+.edu dt:nth-child(5) {
+	margin-top: 1.2em;
+}
+.refs {
+	font-size: 1.3em;
+	font-weight: 200;
+	margin-left: 1.2em;
+}
+.job1:before, .job2:before {
+	color: rgba(0, 102, 0, 0.45);
+	content: "-";
+	display: block;
+	font-size: 6em;
+	left: -0.14em;
+	position: absolute;
+}
+
+/* expanded resume */
+@media screen and (min-width: 1024px) {
+	.resume {
+		font-family: 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', sans-serif;
+	}
+	.skills, .edu {
+		margin-left: 2.1em;
+		margin-right: 2.1em;
+		margin-top: 1.5em;
+	}
+	.skills dd {
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-right: 1em;
+	}
+	.skills dt, .job1 dt:nth-child(3), .job2 dt:nth-child(3) {
+		font-size: 1.5em;
+		font-weight: 700;
+		margin-top: 0.15em;
+	}
+	.skills dt {
+		margin-bottom: 0.3em;
+	}
+	.skills {
+    float: right;
+    left: 50em;
+    margin-bottom: 2.3em;
+    position: absolute;
+    top: 33em;
+}
+	.job1 {
+	}
+	.resume h2 {
+		font-size: 3.5em;
+		font-weight: 200;
+		margin-left: 0.4em;
+		margin-top: 1em;
+		padding-top: 1em;
+		text-transform: lowercase;
+	}
+	.contact {
+		font-weight: 700;
+		line-height: 1.2em;
+		margin-bottom: 1em;
+		margin-left: 2.1em;
+		margin-top: 1em;
+	}
+	.job1, .job2, .refs {
+		margin-bottom: 2em;
+		margin-left: 2.1em;
+		margin-right: 2.1em;
+	}
+	.job1 dt:nth-child(1), .job1 dt:nth-child(2), .job2 dt:nth-child(1), .job2 dt:nth-child(2) {
+		font-size: 0.95em;
+		font-weight: 600;
+		line-height: 1.3em;
+	}
+	.job1 dd, .job2 dd {
+    font-size: 1em;
+    line-height: 1.3em;
+    padding-bottom: 0.7em;
+}
+	.job1 dt:nth-child(3), .job2 dt:nth-child(3) {
+		margin-bottom: 0.8em;
+	}
+	.edu dt dfn {
+		display: block;
+		font-size: 1.6em;
+		font-weight: 200;
+		margin-bottom: 0.6em;
+	}
+	.edu {
+    float: right;
+    font-size: 1em;
+    left: 49.63em;
+    line-height: 1.2em;
+    margin-bottom: 2em;
+    margin-top: 0;
+    position: absolute;
+    top: 55em;
+}
+	.edu dt:nth-child(5) {
+		margin-top: 1.2em;
+	}
+	.refs {
+		font-size: 1.3em;
+		font-weight: 200;
+		margin-left: 1.2em;
+	}
+	.job1:before, .job2:before {
+		color: rgba(0, 102, 0, 0.45);
+		content: "-";
+		display: block;
+		font-size: 6em;
+		left: -0.14em;
+		position: absolute;
+	}
+
+}
+
+/*
+
+ Portfolio
+
+ */
+
+.port {
+	font-family: "Source Sans Pro";
+}
+.port div {
+	clear: both;
+	padding-bottom: 4em;
+}
+.port h3 {
+	border-top: 1px dashed #D3D3D3;
+	font-size: 2.5em;
+	font-weight: 200;
+	padding: 1.8em 0 1em;
+	text-align: center;
+}
+
+.port .site1 img {
+
+border: 1px solid #FFFFFF;
+    box-shadow: 0 0 2px #D3D3D3;
+    -webkit-box-shadow: 0 0 2px #D3D3D3;
+    -moz-box-shadow: 0 0 2px #D3D3D3;
+    -o-box-shadow: 0 0 2px #D3D3D3;
+    
+    
+}
+.port ul.p_nav li {
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-bottom: 0.8em;
+}
+.sandp img, .logot img {
+	display: block;
+	max-width: 100%;
+	border: 1px solid #FFFFFF;
+    box-shadow: 0 0 2px #D3D3D3;
+    -webkit-box-shadow: 0 0 2px #D3D3D3;
+    -moz-box-shadow: 0 0 2px #D3D3D3;
+    -o-box-shadow: 0 0 2px #D3D3D3;
+}
+.port ul.p_nav {
+	margin: auto;
+	max-width: 64em;
+	padding: 5em;
+}
+.sandp ul, .logot ul {
+	padding: 1.5em;
+	
+}
+
+.sandp ul {
+	max-width: 28em;
+	margin: 0 auto;
+}
+
+.logot ul {
+	margin: 0 auto;
+	max-width: 38em;
+}
+
+.sandp ul li, .logot ul li {
+	margin-bottom: 2em;
+}
+.websites {
+	padding: 0 2em;
+}
+.websites p {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-bottom: 1.4em;
+	padding-top: 0.4em;
+}
+.websites h4 {
+	font-size: 2em;
+	padding-bottom: 0.8em;
+}
+img[src="../images/ckm_t.png"] {
+	display: inline;
+	float: left;
+	margin-right: 1em;
+	max-width: 39%;
+	margin-bottom: 1em;
+}
+img[src="../images/ckm_b.png"] {
+	float: left;
+	max-width: 42%;
+	padding: 0 1em 0 0;
+}
+.websites p:nth-of-type(1) {
+	padding-top: 0;
+	padding-bottom: 3em;
+}
+img[src="../images/wnlrg.png"] {
+	padding: 1em 0;
+	width: 100%;
+}
+
+.site1 {
+	margin-bottom: 2em;
+}
+
+@media screen and (min-width: 390px) {
+
+	img[src="../images/ckm_b.png"] {
+		clear: left;
+		float: left;
+		max-width: 39%;
+		padding: 0 1em 0 0;
+	}
+
+}
+
+@media screen and (min-width: 466px) {
+
+	.port {
+		font-family: "Source Sans Pro";
+		margin: 0 auto;
+		max-width: 70em;
+	}
+
+	.port .websites, .port .sandp, .port .logot {
+		clear: both;
+		padding-bottom: 4em;
+	}
+	.port h3 {
+		border-top: 1px dashed #D3D3D3;
+		font-size: 2.5em;
+		font-weight: 200;
+		padding: 1.8em 0 1em;
+		text-align: center;
+	}
+	.port ul.p_nav li {
+		font-size: 1.5em;
+		font-weight: 200;
+		margin-bottom: 0.8em;
+	}
+	.sandp img, .logot img {
+		display: block;
+		max-width: 100%;
+	}
+	.port ul.p_nav {
+		margin: auto;
+		max-width: 64em;
+		padding: 5em;
+	}
+	.sandp ul, .logot ul {
+		padding: 1.5em;
+	}
+
+	.sandp ul {
+		max-width: 28em;
+		margin: 0 auto;
+	}
+
+	.logot ul {
+		margin: 0 auto;
+		max-width: 38em;
+	}
+
+	.sandp ul li, .logot ul li {
+		margin-bottom: 2em;
+	}
+	.websites {
+		padding: 0 2em;
+	}
+	.websites p {
+		font-size: 1em;
+		line-height: 1.4em;
+		padding-bottom: 1.4em;
+		padding-top: 0.4em;
+	}
+	.websites h4 {
+		font-size: 2em;
+		padding-bottom: 0.8em;
+	}
+	img[src="../images/ckm_t.png"] {
+		display: inline;
+		float: left;
+		margin-right: 1em;
+		max-width: 18%;
+	}
+	img[src="../images/ckm_b.png"] {
+		clear: left;
+		float: left;
+		max-width: 18%;
+		padding: 0 1em 0 0;
+	}
+	.websites p:nth-of-type(1) {
+		padding-top: 0;
+	}
+	img[src="../images/wnlrg.png"] {
+		float: none;
+		padding: 1em 0 0 2em;
+		/*position: relative;
+		 /top: -2%;*/
+		width: 70%;
+	}
+
+}
+
+@media screen and (min-width: 520px) {
+
+	.websites p:nth-of-type(1) {
+		padding-bottom: 1.4em;
+		padding-top: 0;
+	}
+
+}
+
+@media screen and (min-width: 825px) {
+	.port .websites {
+
+		padding-bottom: 23.5em !important;
+	}
+
+}
+
+.foot {
+	bottom: 0;
+	box-shadow: 0 0 2px #D3D3D3;
+    -webkit-box-shadow: 0 0 2px #D3D3D3;
+    -moz-box-shadow: 0 0 2px #D3D3D3;
+    -o-box-shadow: 0 0 2px #D3D3D3;
+	position: static;
+	clear: both;
+}
+.foot h5 {
+	font-family: "Raleway";
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	text-transform: uppercase;
+	border-right: 1px solid rgba(0, 100, 0, .25);
+	display: inline-block;
+	font-weight: 400;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.foot h5 span {
+	color: #808080;
+	display: block;
+	font-size: 0.6em;
+	padding-top: 0.9em;
+	text-align: center;
+}
+
+
+.foot .topl {
+    color: #000000;
+    float: right;
+    font-family: Raleway;
+    font-size: 0.8em;
+    margin-right: 2em;
+    margin-top: 3em;
+    text-decoration: none;
+}
+
+.site1 img {
+    display: inline;
+    margin-bottom: 2.5em;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.site2 {
+    margin-top: 4em;
+}
+
+.site1 a h4
+{ 
+    display: inline-block;
+}
+
+
+.site1 a[href="http://www.ebrpl.com"] {
+    color: black;
+    text-decoration: none;
+}
+
+.site1 a[href="http://www.ebrpl.com"]:hover:after {
+    content: " ▸ ";
+    font-size: 2em;
+}
+.site1 a[href="http://www.ebrpl.com"]:hover {
+    color: rgba(0, 100, 0, .9);
+}
+
+@media screen and (min-width: 430px) {
+    .site1 img {
+    display: inline;
+    margin: 1em 0.5em 2.5em;
+    max-width: 45%;
+}
+
+
+}
+
+@media screen and (min-width: 855px) {
+.site1 img {
+    display: inline;
+    margin: 1em 4% 2.5em 0.5em;
+    max-width: 100%;
+}
+
+}

@@ -1,0 +1,33 @@
+// platform to make daily lives more intuitive
+
+const root;
+
+const User = function(name,age,email,password){
+    return {
+        name,
+        age,
+        email,
+        password
+    };
+};
+
+const bank = {
+    data:{},
+
+};
+
+let value = null;
+
+const mark = new User('mark', 25, 'markjacobacosta@aim.com', 'kornkid1');
+const harvey = new User('harvey', 25, 'harvey@gmail.com', 'harvey1');
+
+const Job = function(){
+    return {
+        context,
+        type,
+        modif,
+        outputEvent,
+        inputEvent,
+    };
+};
+
