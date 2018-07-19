@@ -142,8 +142,8 @@ h1 {
 .content {
 	height: 26vh;
 	background: rgba(224, 98, 73, 0.81);
-	filter: blur(26px);
-	-webkit-filter: blur(26px);
+	filter: blur(50px);
+	-webkit-filter: blur(50px);
 	margin: 16%;
 }
 
@@ -296,8 +296,8 @@ h1 span {
 	.content {
 		height: 35vh;
 		background: rgba(185, 255, 199, 0.73);
-		filter: blur(26px);
-		-webkit-filter: blur(26px);
+		filter: blur(60px);
+		-webkit-filter: blur(60px);
 		margin: 7% 8%;
 	}
 }
@@ -335,8 +335,8 @@ h1 span {
 	.content {
 		height: 35vh;
 		background: rgba(185, 255, 199, 0.73);
-		filter: blur(50px);
-		-webkit-filter: blur(50px);
+		filter: blur(60px);
+		-webkit-filter: blur(60px);
 		margin: 6% 0%;
 		transition: 1s ease;
 		-webkit-transition: 1s ease;
@@ -832,7 +832,7 @@ h1 span {
 }
 
 .port h3 {
-	border-top: 1px solid rgba(8, 31, 11, 0.33);
+	border-top: 1px solid rgba(60, 132, 230, 0.39);
 	font-size: 2.5em;
 	font-weight: bold;
 	padding: 1.8em 0 1em;
@@ -840,6 +840,7 @@ h1 span {
 	margin-top: 2em;
 	padding-top: 4em;
 	font-family: 'Lora', sans-serif;
+	margin: 6% 0 6% 0;
 }
 
 #top-port-menu {
@@ -848,7 +849,7 @@ h1 span {
 	display: none;
 	opacity: 0;
 	left: 0;
-	background: rgba(255, 255, 255, 0.98);
+	background: rgba(255, 255, 255, 0.966);
 	width: 100vw;
 	height: 5em;
 	box-shadow: 0 0 7px rgba(22, 79, 105, 0.40);
@@ -989,9 +990,10 @@ h1 span {
 }
 
 .port ul.p_nav {
-	margin: auto;
-	max-width: 62em;
-	padding: 5em 0em 0em 5em;
+    margin: auto;
+    max-width: 62em;
+	padding: 5em 0em 2em 5em;
+	font-family: 'Lora', sans-serif;
 }
 
 .sandp ul,
@@ -1094,7 +1096,7 @@ img[src="../images/wnlrg.png"] {
 }
 
 .fiction1 {
-	margin-top: 19vw;
+	margin-top: 6vw;
 }
 
 .site2 {
@@ -1432,6 +1434,11 @@ img[src="../images/wnlrg.png"] {
     margin-right: 8px;
 }
 
+.cp-ifs {
+	height: 100vh;
+    margin-bottom: 18%;
+}
+
 .cp-if1, .cp-if2, .cp-if3 {
     width: 100%;
     height: 42vw;
@@ -1450,8 +1457,9 @@ img[src="../images/wnlrg.png"] {
 }
 
 .cp-ifs iframe, .q-onb img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.34), 0px 32px 150px rgba(8, 18, 43, 0.3);
+    box-sizing: border-box;
 }
 
 .cp-ifs div:nth-child(3), .cp-ifs div:nth-child(4), .cp-ifs div:nth-child(5) {
@@ -1492,18 +1500,27 @@ img[src="../images/wnlrg.png"] {
 	height: 300px;
 }
 
-.q-onb div:nth-of-type(1) {
-
+.q-onb p {
+	padding-right: 9%;
 }
+
+.q-onb div:nth-of-type(1) {
+	margin-bottom: 6%;
+}
+
 .q-onb div:nth-of-type(1) p {
     float: left;
     /* display: inline; */
-    width: 48%;
+    width: 39%;
 }
 
 .q-onb div:nth-of-type(2) p {
     float: right;
-    width: 42%;
+    width: 32%;
+}
+
+.q-onb aside {
+	margin-bottom: 5%;
 }
 
 .q-onb div:nth-of-type(1) p + img {
@@ -1512,3 +1529,90 @@ img[src="../images/wnlrg.png"] {
 .q-onb div:nth-of-type(2) p + img {
 }
 
+.websites hr {
+	border-top: 1px solid rgba(60, 132, 230, 0.39);
+	margin-top: 12%;
+	display: block;
+	clear: both;
+	
+}
+
+.websites hr + article {
+	margin-top: 14%;
+}
+
+@media screen and (max-width: 1145px) {
+
+	.q-onb div:nth-of-type(1) p {
+		float: none;
+		/* display: inline; */
+		width: 100%;
+	}
+	
+	.q-onb div:nth-of-type(2) p {
+		float: none;
+		width: 100%;
+	}
+
+	.q-onb div:nth-of-type(1), .q-onb div:nth-of-type(2) {
+		
+	}
+
+	.q-onb div:nth-of-type(1) p + img, .q-onb div:nth-of-type(2) p + img {
+		width: 60vw; 
+		margin: 6% auto 0 auto;
+		height: initial;
+		display: block;
+		
+	}
+
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+	.q-onb div:nth-of-type(1) p + img, .q-onb div:nth-of-type(2) p + img {
+		width: 80vw; 
+	}
+
+	.money-img, .dbrf-img {
+		width: 60vw;
+		border: 1px solid #fff;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.34);
+		float: none;
+		height: initial;
+		margin: auto;
+		display: block;
+		margin-bottom: 14%;
+		margin-top: 14%;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.cp-ifs div:nth-child(4) {
+		margin-right: 14.75%;
+	}
+
+	.cp-ifs div:nth-child(3) iframe, .cp-ifs div:nth-child(4) iframe, .cp-ifs div:nth-child(5) iframe {
+		width: 80vw;
+		margin: auto;
+		height: 25vw;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.nav li {
+		float: left;
+		font-family: 'Francois One', sans-serif;
+		margin-right: 1em;
+		font-weight: bold;
+		letter-spacing: 2px;
+		font-size: 1.38em;
+	}
+
+	.content {
+		height: 26vh;
+		margin: 28% 16%;
+	}
+}
