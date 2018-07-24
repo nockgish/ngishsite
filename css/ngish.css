@@ -25,6 +25,10 @@ body {
 @media screen and (min-width: 1077px) {
 	#portfolio-body {
 		border: 12px rgb(255, 255, 255) solid;
+		background-image: url(../images/try.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
 	}
 }
 
@@ -87,7 +91,7 @@ h1 {
 	color: #fff;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 3em;
-	font-weight: 400;
+	font-weight: 100;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
@@ -434,6 +438,7 @@ h1 span {
 
 .resume_jobs dl {
 	max-width: 65vw;
+	opacity: 0; 
 }
 
 @media screen and (min-width: 1511px) {
@@ -640,7 +645,7 @@ h1 span {
 }
 
 .dbrf-img {
-    width: 31vw;
+    width: 49vw;
     border: 1px solid #fff;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.34);
     float: right;
@@ -1114,6 +1119,11 @@ img[src="../images/wnlrg.png"] {
 }
 
 @media screen and (min-width: 466px) {
+
+	.port .bc-site2 img {
+
+	}
+
 	.port {
 		font-family: 'Work Sans', sans-serif;
 		margin: 0 auto;
@@ -1587,6 +1597,10 @@ img[src="../images/wnlrg.png"] {
 		margin-bottom: 14%;
 		margin-top: 14%;
 	}
+
+	.dbrf-img {
+		width: 80vw;
+	}
 }
 
 @media screen and (max-width: 1030px) {
@@ -1614,5 +1628,28 @@ img[src="../images/wnlrg.png"] {
 	.content {
 		height: 26vh;
 		margin: 28% 16%;
+	}
+}
+
+/* @media screen and (max-width: 467px) {
+
+.port .bc-site2 img {
+    width: 30%;
+    margin: 0 1% !important;
+    display: inline-block;
+}
+} */
+
+@media screen and (max-width: 700px) {
+	.port .bc-site2 img {
+	width: 76vw;
+	margin: 5% 0 !important;
+	}
+
+
+	#portfolio-body .mp-logo-frst {
+		width: 55vw;
+		margin: auto;
+		margin-bottom: 13%;
 	}
 }
