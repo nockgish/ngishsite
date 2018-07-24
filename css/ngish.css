@@ -61,7 +61,8 @@ body {
 #portfolio-body li a:hover,
 #portfolio-body .on-this-view {
 	color: rgba(10, 45, 80, 0.73);
-	border-bottom: 0.5vw rgba(10, 45, 80, 0.73) solid !important;
+	border-bottom: 0.5vw rgba(185, 255, 199, 0.98) solid !important;
+	
 }
 
 #portfolio-body .foot .topl {
