@@ -24,7 +24,7 @@ body {
 
 @media screen and (min-width: 1077px) {
 	#portfolio-body {
-		border: 12px rgb(255, 255, 255) solid;
+		border: 12px rgba(255, 255, 255, 0.49) solid;
 		background-image: url(../images/try.png);
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -650,6 +650,19 @@ h1 span {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.34);
     float: right;
     margin-left: 3vw;
+}
+
+@media screen and (min-width: 1440px) {
+	.dbrf-img {
+		width: 49vw;
+		border: 1px solid #fff;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.34);
+		float: none;
+		margin-left: 3vw;
+		margin-bottom: 3vw;
+		margin-top: 3vw;
+		display: block;
+	}
 }
 
 .fiction1 .holdTextImg {
