@@ -349,9 +349,18 @@ h1 span {
 	}
 }
 
+.content .band1, .content .band2, .content .band3, .content .band4 {
+	transition: 1s ease-out;
+}
+
 .content .band1 {
 	height: 50%;
 	background-color: rgba(115, 172, 198, 1);
+}
+
+.content .band1:hover {
+	background-color: rgb(176, 223, 245);
+	transform: translate3d(0, -35%, 0);
 }
 
 .content .band2 {
@@ -360,15 +369,31 @@ h1 span {
 	border-top: #fff 0px solid;
 }
 
+.content .band2:hover {
+	background-color: rgb(139, 253, 162);
+	transform: translate3d(0%, -40%, 0);
+}
+
 .content .band3 {
 	height: 55%;
 	background-color: rgba(203, 233, 178, 1);
+}
+
+.content .band3:hover {
+	background-color: rgb(39, 212, 189);
+	transform: translate3d(0, -20%, 0) skew(25deg);
 }
 
 .content .band4 {
 	height: 55%;
 	background-color: rgba(187, 228, 227, 1);
 }
+
+.content .band4:hover {
+	background-color: rgb(236, 182, 111);
+    transform: translate3d(0, 0%, 0) scale(1.5);
+}
+
 
 @media screen and (min-width: 1216px) {
 	.content ul li {
