@@ -170,3 +170,18 @@ if(document.querySelector('.resume_jobs')) {
     offset: "80%"
   });
 }
+
+
+// ______________________
+
+// are we there yet?
+
+window.onscroll = areWeThereYet;
+
+function areWeThereYet() {
+  const progScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const yetting = (progScroll / height) * 100;
+  document.querySelector(".wellAreWe").style.width = yetting + '%';
+  console.log('it scroll');
+}
