@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/ngish.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <style>
     .bar {
       height: 0.4vw;
@@ -19,26 +18,41 @@
     }
 
     .b1 {
-      width: 23vw;
+      width: 16vw;
       transition-delay: 0s;
     }
 
     .b3 {
-      width: 28vw;
+      width: 36vw;
       transition-delay: 0.2s;
 
     }
 
     .b4 {
-      width: 24vw;
+      width: 29vw;
       transition: 0.35s ease;
       transition-delay: 0.6s;
     }
 
     .b2 {
-      width: 30vw;
+      width: 34vw;
       transition: 0.35s ease;
       transition-delay: 0.4s;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .b1 {
+        width: 23vw;
+      }
+      .b2 {
+        width: 53vw;
+      }
+      .b3 {
+        width: 39vw;
+      }
+      .b4 {
+        width: 46vw;
+      }
     }
 
     /*  on page load call function to add   */
@@ -81,7 +95,7 @@
         <div class="bar"></div>
         <p>SCSS, CSS, HTML, SVG</p>
         <div class="bar"></div>
-        
+
         <p>Sketch, Photoshop, Illustrator</p>
         <div class="bar"></div>
       </div>
@@ -110,7 +124,7 @@
           <dt>July 2017 - July 2018</dt>
           <dt>BLBOX, New York, NY</dt>
           <dt>
-            <dfn>Web Developer, UX/UI</dfn>
+            <dfn>Web Designer & Developer, UX/UI</dfn>
             <dfn class="toolsUsed">
               <span>Tools used ▸</span> Vanilla JS, React, SCSS, Redux, SVG, node.js, git, Webpack, Photoshop, Illustrator, AWS
               (s3, ec2)</dfn>
@@ -212,7 +226,6 @@
         thebar[3].classList.add('b4');
         thebar[2].classList.add('b3');
         thebar[1].classList.add('b2');
-
       }, 800)
     })();
 
