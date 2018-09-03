@@ -7,7 +7,6 @@ var allOf = document.body,
 var resumeHold = document.querySelector('.resume'),
   portHold = document.querySelector('.port');
 
-var sectionBorders = [document.querySelector('.jobrecent'), document.querySelector('.jobcurrent'), document.querySelector('.job1'), document.querySelector('.job2')];
 portSectionMenu = document.querySelector('#top-port-menu');
 eduSection = document.querySelector('.edu');
 
@@ -33,27 +32,11 @@ function portIn() {
 function resumeIn() {
   window.setTimeout(function () {
     resumeHold.style.cssText = "opacity: 1; transform: translate3d(0, 0%, 0);"
-    // sectionBorders[0].style.cssText = "transition-delay: 0.5s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-    // sectionBorders[1].style.cssText = "transition-delay: 0.7s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-    // sectionBorders[2].style.cssText = "transition-delay: 0.9s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
+    // roleCall[0].style.cssText = "transition-delay: 0.5s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
+    // roleCall[1].style.cssText = "transition-delay: 0.7s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
+    // roleCall[2].style.cssText = "transition-delay: 0.9s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
   }, 100);
 }
-
-// Name Effects
-
-// nameAnd.onmouseenter = function() {
-// 	allOf.style.cssText = "background: rgba(185, 221, 245, 0.67)";
-//   if(contents) {
-//     contents.style.cssText = "background: rgba(255, 205, 158, 0.67)";
-//   }
-// }
-//
-// nameAnd.onmouseleave = function() {
-// 	allOf.style.cssText= "background: rgba(185, 221, 245, 0.35)";
-//   if(contents) {
-//     contents.style.cssText = "background:rgba(185, 255, 199, 0.73)";
-//   }
-// }
 
 // Portfolio Waypoints and Navigation
 
@@ -63,8 +46,7 @@ if (document.getElementById('websites')) {
     handler: function (direction) {
       if (direction === "down") {
         portSectionMenu.style.cssText = "display: block; opacity: 1";
-      }
-      else if (direction === "up") {
+      } else if (direction === "up") {
         portSectionMenu.style.cssText = "opacity: 0";
         window.setTimeout(function () {
           portSectionMenu.style.cssText = "height: 0";
@@ -111,69 +93,57 @@ if (document.getElementById('websites')) {
 }
 
 if (document.querySelector('.resume_jobs')) {
+  const roleCall = [document.querySelector('.jobrecent'), document.querySelector('.jobcurrent'), document.querySelector('.job1'), document.querySelector('.job2')];
+  const waypointNames = {wp1: 'ShowJr', wp2: 'ShowJc', wp3: 'ShowJ1', wp4: 'ShowJ2'};
+  const downCSS = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1";
+  const upCSS = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 0";
 
-  const ShowJr = new Waypoint({
-    element: document.querySelector('.jobrecent'),
-    handler: function (direction) {
-      if (direction === "down") {
-        sectionBorders[0].style.cssText = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-      }
-      else if (direction === "up") {
-        sectionBorders[0].style.cssText = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 0"
-      }
+
+  // element: Elements[nameOfElement],
+  // handler: direction => direction = 'down' ? Elements[nameOfElement].style.cssText = downCSS : Elements[nameOfElement].style.cssText = upCSS;
+
+  // .map
+  
+  waypointNames.wp1 = new Waypoint({
+    element: roleCall[0],
+    handler: (direction) => {
+      direction === 'down' ? roleCall[0].style.cssText = downCSS : roleCall[0].style.cssText = upCSS;
     },
     offset: "90%"
   });
 
-  const ShowJc = new Waypoint({
-    element: document.querySelector('.jobcurrent'),
-    handler: function (direction) {
-      if (direction === "down") {
-        sectionBorders[1].style.cssText = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-      }
-      else if (direction === "up") {
-        sectionBorders[2].style.cssText = "transition-delay: 0.3s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 0"
-      }
+  waypointNames.wp2 = new Waypoint({
+    element: roleCall[1],
+    handler: (direction) => {
+      direction === 'down' ? roleCall[1].style.cssText = downCSS : roleCall[1].style.cssText = upCSS;
     },
     offset: "90%"
   });
 
-
-
-  const ShowJ1 = new Waypoint({
-    element: document.querySelector('.job1'),
-    handler: function (direction) {
-      if (direction === "down") {
-        sectionBorders[2].style.cssText = "transition-delay: 0.0s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-      }
-      else if (direction === "up") {
-        sectionBorders[2].style.cssText = "transition-delay: 0.0s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 0"
-      }
+  waypointNames.wp3 = new Waypoint({
+    element: roleCall[2],
+    handler: (direction) => {
+      direction === 'down' ? roleCall[2].style.cssText = downCSS : roleCall[2].style.cssText = upCSS;
     },
     offset: "90%"
   });
-  const ShowJ2 = new Waypoint({
-    element: document.querySelector('.job2'),
-    handler: function (direction) {
-      if (direction === "down") {
-        sectionBorders[3].style.cssText = "transition-delay: 0.0s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 1"
-      }
-      else if (direction === "up") {
-        sectionBorders[3].style.cssText = "transition-delay: 0.0s; border-left: 1vw rgba(216, 255, 211, 0.8) solid; margin-left: 2.1em; opacity: 0"
-      }
+
+ waypointNames.wp4 = new Waypoint({
+    element: roleCall[3],
+    handler: (direction) => {
+      direction === 'down' ? roleCall[3].style.cssText = downCSS : roleCall[3].style.cssText = upCSS;
     },
     offset: "90%"
   });
 
   const ShowEd = new Waypoint({
     element: eduSection,
-    handler: function (direction) {
+    handler: (direction) => {
       if (direction === "down") {
         eduSection.style.cssText = "opacity: 1";
-      }
-      else if (direction === "up") {
-        // sectionBorders[3].style.cssText = "opacity: 0" 
-        eduSection.style.cssText = "opacity: 1";
+      } else if (direction === "up") {
+        // roleCall[3].style.cssText = "opacity: 0" 
+        eduSection.style.cssText = "opacity: 0";
       }
     },
     offset: "80%"
@@ -185,3 +155,10 @@ if (document.querySelector('.resume_jobs')) {
 
 // are we there yet?
 
+
+// if (direction === "down") {
+//   roleCall[0].style.cssText = downCSS;
+// }
+// else {
+//   roleCall[0].style.cssText = upCSS;
+// }
