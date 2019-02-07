@@ -9,6 +9,26 @@ body {
 	-moz-transition: background 2s ease;
 }
 
+.content {
+
+	animation: fadeInIt 3s forwards;
+ }
+
+ @keyframes fadeInIt { 
+	 0% 
+ {
+	opacity: 0;
+	transform: translate3d(0, -200px,0) scale(0.9) skew(2deg);
+  }
+  50% {
+	  transform: skew(5deg)
+  }
+  100% {
+	opacity: 1;
+	transform: translate3d(0,0,0) scale(1) skew(0deg);
+  }
+}
+
 .all {
 	margin: 0;
 	padding: 0;
