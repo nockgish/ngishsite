@@ -92,6 +92,8 @@ if (document.getElementById('websites')) {
 
 }
 
+
+
 if (document.querySelector('.resume_jobs')) {
   const roleCall = [document.querySelector('.jobrecent'), document.querySelector('.jobcurrent'), document.querySelector('.job1'), document.querySelector('.job2')];
   const waypointNames = {wp1: 'ShowJr', wp2: 'ShowJc', wp3: 'ShowJ1', wp4: 'ShowJ2'};
