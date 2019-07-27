@@ -6,7 +6,7 @@ body {
 	border: 6px rgba(255, 255, 255, 0) solid;
 	box-shadow: 2px 0px 10px rgba(7, 79, 107, 0.15) inset; transition: background 2s ease;
 	-webkit-transition: background 2s ease;
-	-moz-transition: background 2s ease;
+	-moz-transition: background 4s ease;
 }
 
 .content {
@@ -135,9 +135,9 @@ h1 {
 	color: #fff;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 3em;
-	font-weight: 100;
+	font-weight: bold;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
 	-webkit-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
 	-moz-transition: 0.8s cubic-bezier(0.94, 0.06, 0.42, 0.95) 0.2s;
@@ -465,11 +465,11 @@ h1 span {
 
 #resume_time,
 #the-very {
-	background-image: url('http://nicholasgish.com/images/spotr.jpg');
-	background-blend-mode: soft-light;
-	background-attachment: fixed;
-	background-size: 217%;
-	background-repeat: no-repeat;
+	background-image: url(http://nicholasgish.com/images/spotr.jpg);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #resume_time .contact a {
 	transition: 0.2s ease-out;
@@ -740,10 +740,6 @@ h1 span {
 
 .fiction1 .holdTextImg p {
 	height: 19vw;
-}
-
-.fiction1 .holdTextImg .dbrf-img + p {
-   height: 100%;
 }
 
 @media screen and (max-width: 850px) {
@@ -1488,7 +1484,6 @@ img[src="../images/wnlrg.png"] {
 
 .just-the-name {
 	text-shadow: 1px 2px 0px rgba(182, 247, 232, 0.61), 1px 3px 3px rgba(130, 93, 25, 0.18);
-	text-transform: lowercase !important;
 }
 
 .listenToMusic {
@@ -1532,8 +1527,6 @@ img[src="../images/wnlrg.png"] {
     letter-spacing: 1px;
     margin-right: 8px;
 }
-
-
 
 .cp-ifs {
 	height: 100vh;

@@ -12,11 +12,11 @@
 <body id="the-very">
 <div class="all" id="all">
 <div class="header">
-<h1><a href=""><span class="just-the-name">Nick <span>Gish</span><span class="what-kind-of">web developer</span></span></a></h1>
+<h1><a href="">Nick <span>Gish<span class="what-kind-of">design and web</span></span></a></h1>
 <p class="quick-contact"><a href="https://www.linkedin.com/in/ngish">linkedin.com/in/ngish</a>&nbsp;&nbsp;<span class="bump-it">/</span>&nbsp;&nbsp;<a href="http://codepen.io/nockgish">codepen.io/nockgish</a></p>
 <ul class="nav">
-<li><a href="portfolio/#">portfolio</a></li>
-<li><a href="resume">resume</a></li>
+<li><a href="portfolio">portfolio</a></li>
+<li><a href="resume">c.v.</a></li>
 </ul>
 </div><!-- closes header -->
 <div class="content">
@@ -45,9 +45,22 @@
 <script type="text/javascript">
   const bodyImage = document.querySelector('#the-very');
   const listenLink = document.querySelector('.listenToMusic');
+  const tBands = [].slice.call(document.querySelectorAll('.content div'));
+  const tColors = ['#187953', '#a90b0b', '#ca3d0a', '#25567b'];
+  console.warn(listenLink, bodyImage, tBands);
+  
 
-  // console.warn(listenLink, bodyImage);
-
+  tBands.forEach((eachBand, indexOn) => {
+    tColors.forEach((eachColor, indexOf) => {
+      let oneColor = tColors[indexOn];
+      // const sayBand = () => {console.log(eachBand), console.log(oneColor)};
+      eachBand.onmouseover = (event) => {bodyImage.style.cssText = "background-color:" + oneColor + " "; }
+    
+    });
+    
+    
+    
+  })
 //   listenLink.addEventListener(onmouseover, function() {
 // 	  bodyImage.style.cssText = "color: #F44336";
 // 	  console.warn('this is some serious bullshit');
@@ -60,6 +73,8 @@
   listenLink.onmouseleave = () => {
 	bodyImage.style.cssText = "background-color: #152844 !important";
   }
+
+
 </script>
 </body>
 </html>
