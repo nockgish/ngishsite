@@ -24,7 +24,7 @@ function portIn() {
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const yetting = (progScroll / height) * 100;
       document.querySelector(".wellAreWe").style.width = yetting + '%';
-      console.log('it scroll');
+      // console.log('it scroll');
     }
   }, 100);
 }
@@ -56,6 +56,7 @@ if (document.getElementById('websites')) {
     offset: "20%"
   });
   const sandpSection = document.querySelector('.sandp');
+  const holdClouds = document.querySelector('.holdMyClouds');
   const sandpImgs = ['../images/leafanddrops.jpg', '../images/trains1.jpg', '../images/bookfest.png', '../images/throughtheeyes.png', '../images/onebook.png', '../images/eveninghymn.jpg', '../images/swaits.png']
   const logoTypeImgs = ['../images/mp-logo.jpg', '../images/ngish_type_s1.png', '../images/ngish_type_s2.png'];
 
@@ -66,11 +67,14 @@ if (document.getElementById('websites')) {
     element: sandpSection,
     handler: function (direction) {
       if (direction === "down") {
+        holdClouds.style.cssText = "background-size: 120%; background-position: -20px 0";
+        console.log('we made it to S and P');
         sandpImgSrcs.forEach((eachSrc, eachImg) => {
           eachSrc.src = sandpImgs[eachImg]
         })
       } else if (direction === "up") {
         // do nothing here, friend
+        holdClouds.style.cssText = "transform: translate3d(0,0,0)";
       }
     },
     offset: "50%"
@@ -109,7 +113,8 @@ if (document.querySelector('.resume_jobs')) {
   waypointNames.wp1 = new Waypoint({
     element: roleCall[0],
     handler: (direction) => {
-      direction === 'down' ? roleCall[0].style.cssText = downCSS : roleCall[0].style.cssText = upCSS;
+      direction === 'down' ? roleCall[0].style.cssText = downCSS  : roleCall[0].style.cssText = upCSS;
+      allOf.style.cssText = "background-color: #0d3f4c";
     },
     offset: "90%"
   });
@@ -118,6 +123,7 @@ if (document.querySelector('.resume_jobs')) {
     element: roleCall[1],
     handler: (direction) => {
       direction === 'down' ? roleCall[1].style.cssText = downCSS : roleCall[1].style.cssText = upCSS;
+      allOf.style.cssText = "background-color: #1b3e44";
     },
     offset: "90%"
   });
@@ -126,6 +132,7 @@ if (document.querySelector('.resume_jobs')) {
     element: roleCall[2],
     handler: (direction) => {
       direction === 'down' ? roleCall[2].style.cssText = downCSS : roleCall[2].style.cssText = upCSS;
+      allOf.style.cssText = "background-color: #113a58";
     },
     offset: "90%"
   });
@@ -134,6 +141,7 @@ if (document.querySelector('.resume_jobs')) {
     element: roleCall[3],
     handler: (direction) => {
       direction === 'down' ? roleCall[3].style.cssText = downCSS : roleCall[3].style.cssText = upCSS;
+      allOf.style.cssText = "background-color: #113a58";
     },
     offset: "90%"
   });
