@@ -47,16 +47,17 @@
   const bodyImage = document.querySelector('#the-very');
   const listenLink = document.querySelector('.listenToMusic');
   const tBands = [].slice.call(document.querySelectorAll('.content div'));
-  const tColors = ['#25567b','#187953','#a90b0b', '#ca3d0a' ];
+  const tColors = ['#25567b','#187953','#a90b0b', '#ca3d0a'];
   console.warn(listenLink, bodyImage, tBands);
   
 
   tBands.forEach((eachBand, indexOn) => {
-    tColors.forEach((eachColor, indexOf) => {
+    tColors.forEach((eachColor) => {
       let oneColor = tColors[indexOn];
-      // const sayBand = () => {console.log(eachBand), console.log(oneColor)};
-      eachBand.onmouseover = (event) => {bodyImage.style.cssText = "background-color:" + oneColor + " "; }
-    
+      eachBand.onmouseover = (event) => {bodyImage.style.cssText = "background-color:" + oneColor + " "; 
+      // const sayBand = () => {console.log(eachBand), console.log(oneColor, 'this is indexOf ' + indexOf, 'this is indexOn ' + indexOn)};
+      // sayBand()
+      ;}
     });
     
     

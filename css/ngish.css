@@ -284,6 +284,12 @@ a.on-this-view {
 
 a.on-this-view {
 	border-bottom: 0.5vw rgba(185, 255, 199, 0.73) solid !important;
+	/* 0.5vw rgb(69, 98, 126) solid !important */
+}
+
+#portfolio-body a.on-this-view {
+	border-bottom: 0.5vw rgb(69, 98, 126) solid !important;
+	/*  solid !important */
 }
 
 h1 span {
@@ -1751,7 +1757,8 @@ img[src="../images/wnlrg.png"] {
 .wellAreWe {
     height: 7px;
     width: 0%;
-    background: #86f5c4;
+	background-color: #86f5c4;
+	background-image: linear-gradient(to left, #86f5c4 0%,#d6fff2 100%);
 }
 
 .leafAndDrops {
@@ -1759,4 +1766,8 @@ img[src="../images/wnlrg.png"] {
     width: 557px;
     margin: 0;
     padding: 0;
+}
+
+.jobrecent_rc {
+	/* clear: both; */
 }

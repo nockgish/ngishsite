@@ -20,13 +20,16 @@ function portIn() {
     window.onscroll = areWeThereYet;
 
     function areWeThereYet() {
+      if(portSectionMenu) {
       const progScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const yetting = (progScroll / height) * 100;
+        const yetting = (progScroll / height) * 100;
       document.querySelector(".wellAreWe").style.width = yetting + '%';
       // console.log('it scroll');
     }
+  }
   }, 100);
+
 }
 
 function resumeIn() {
